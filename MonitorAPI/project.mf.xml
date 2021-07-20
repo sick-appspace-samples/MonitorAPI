@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest>
     <application name="MonitorAPI">
         <crown name="MonitorAPI">
@@ -6,13 +6,10 @@
         </crown>
         <meta key="author">AppSpace Sample</meta>
         <meta key="version">2.5.0</meta>
-        <meta key="licensed">false</meta>
         <meta key="priority">low</meta>
         <meta key="copy-protected">false</meta>
         <meta key="read-protected">false</meta>
         <meta key="tags">System</meta>
-        <entry path="scripts" default="monitorAPI.lua">
-            <file type="text/x-lua">monitorAPI.lua</file>
-        </entry>
+        <entry default="monitorAPI.lua" path="scripts"/>
     </application>
 </manifest>
