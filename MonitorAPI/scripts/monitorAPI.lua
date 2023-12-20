@@ -21,8 +21,7 @@ local app = Monitor.App.create(_APPNAME)
 
 --Start of Function and Event Scope---------------------------------------------
 
---Declaration of the 'main' function as an entry point for the event loop
---@main()
+---Declaration of the 'main' function as an entry point for the event loop
 local function main()
   -- Starting timer
   Timer.start(gTmr)
@@ -31,7 +30,7 @@ end
 
 Script.register('Engine.OnStarted', main)
 
--- Retrieve cpu information
+---Retrieve cpu information
 local function printCPUMonitor()
   local overall,
     cores = cpu:getLoad()
@@ -43,7 +42,7 @@ local function printCPUMonitor()
   end
 end
 
--- Retrieve memory information
+---Retrieve memory information
 local function printMemoryMonitor()
   local used,
     cap,
@@ -55,7 +54,7 @@ local function printMemoryMonitor()
   print('\tUsed [Percent]: ' .. percent)
 end
 
--- Retrieve App information
+---Retrieve App information
 local function printAppMonitor()
   local status,
     additional = app:getStatusInfo()
@@ -73,7 +72,7 @@ local function printAppMonitor()
   print('\tApp Data Usage [Percent]: ' .. percent)
 end
 
--- Retrieve Network information
+---Retrieve Network information
 local function printNetworkMonitor()
   local sent,
     rec = net:getLoad()
